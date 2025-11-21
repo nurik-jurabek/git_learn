@@ -1,0 +1,9 @@
+git restore — modifies WORKING DIRECTORY or STAGING AREA
+
+(does NOT change commit history)
+
+Use cases:
+
+Undo changes in a file (before staging)
+
+Unstage a file (remove from staging but keep real file)
