@@ -7,3 +7,17 @@ Use cases:
 Undo changes in a file (before staging)
 
 Unstage a file (remove from staging but keep real file)
+
+ git reset — modifies STAGING AREA or HISTORY
+
+(more powerful and dangerous)
+
+Different modes:
+
+--soft → undo commit but keep everything staged
+
+--mixed (default) → undo commit & unstage changes (keep in working directory)
+
+--hard → delete commit + delete changes in working directory ❗ dangerous
+
+--keep → like hard but keeps uncommitted work if possible
