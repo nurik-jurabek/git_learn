@@ -36,3 +36,19 @@ Commit is already pushed
 ✔ You are on a shared repo
 ✔ You want to undo without deleting history
 ✔ You want to undo several commits safely
+
+
+
+Git log print format
+git config format.pretty "format:%C(yellow)%h%Creset %C(green) %ad%Creset | %C(red)%an%Creset : %s"
+
+
+| Название            | Что делает                    |
+| ------------------- | ----------------------------- |
+| `oneline`           | Хэш + сообщение одной строкой |
+| `short`             | Короткий формат Git           |
+| `medium`            | Средний (по умолчанию)        |
+| `full`              | Полный (дата, автор, емайл)   |
+| `fuller`            | Еще больше метаданных         |
+| `raw`               | Сырые данные коммита          |
+| `format:<template>` | Полностью кастомный формат    |
