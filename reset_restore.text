@@ -21,3 +21,18 @@ Different modes:
 --hard → delete commit + delete changes in working directory ❗ dangerous
 
 --keep → like hard but keeps uncommitted work if possible
+
+
+git revert does NOT delete past commits.
+Instead, it creates a new commit that undoes the changes of an earlier commit.
+
+git revert abc1234
+
+Revert last 3 commits:
+git revert HEAD~3..HEAD
+
+When to use revert
+Commit is already pushed
+✔ You are on a shared repo
+✔ You want to undo without deleting history
+✔ You want to undo several commits safely
